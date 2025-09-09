@@ -35,6 +35,746 @@
 /* ===============================
 06_プロショップマガジン各記事01 Start
 =============================== */
+/* shopcommon */
+.shopcommon__wrapper {
+    background-color: #F8FAF2;
+    font-family: 'Shippori Mincho', 'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', '游明朝', 'Yu Mincho', 'YuMincho', serif;
+    color: #000;
+    padding-bottom: 175px;
+}
+
+.shopcommon__wrapper img {
+    width: 100%;
+}
+
+.shopcommon__wrapper .font-en {
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.shopcommon__kv {
+    position: relative;
+    background-color: #404E45;
+}
+
+.shopcommon__kv__heading {
+    position: absolute;
+    bottom: 104px;
+    right: 65px;
+}
+
+.shopcommon__kv__2__heading {
+    position: absolute;
+    top: 24px;
+    right: 65px;
+}
+
+.shopcommon__gradient-overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            rgba(64, 78, 69, 0) 45%,
+            #404E45 100%);
+    pointer-events: none;
+}
+
+.shopcommon__kv__heading h1 span {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 2.1;
+    color: #FFF;
+    display: inline-block;
+    position: relative;
+    background-image: url('/tire-garden/img/shopcommon/under_line.png');
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    background-size: auto 4px;
+}
+
+.shopcommon__kv__2__heading h1 span {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 2.1;
+    color: #FFF;
+    display: inline-block;
+    position: relative;
+    background-image: url('/tire-garden/img/shopcommon/under_line.png');
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    background-size: auto 4px;
+}
+
+.shopcommon__index {
+    position: relative;
+    background-color: #FEFFFA;
+    padding: 56px 64px;
+    max-width: 1072px;
+    width: 100%;
+    display: flex;
+    margin: -64px auto 0;
+}
+
+.shopcommon__index-anchor-list {
+    max-width: 517px;
+    width: 100%;
+}
+
+.shopcommon__index-anchor-item {
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+    display: inline-block;
+    background-image: url('/tire-garden/img/shopcommon/under_line.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: auto 3px;
+    width: 100%;
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+
+.shopcommon__index-anchor-item.post_script {
+    background-image: unset;
+    padding-top: 16px;
+    background-color: #EEF6E7;
+}
+
+.shopcommon__index-anchor-item.post_script a {
+    color: #097C33;
+}
+
+.shopcommon__index-anchor-item.post_script::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image:
+        repeating-linear-gradient(to right, #097C33 0 4px, transparent 4px 8px),
+        repeating-linear-gradient(to bottom, #097C33 0 4px, transparent 4px 8px),
+        repeating-linear-gradient(to right, #097C33 0 4px, transparent 4px 8px),
+        repeating-linear-gradient(to bottom, #097C33 0 4px, transparent 4px 8px);
+    background-repeat: no-repeat;
+    background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+    background-position: top left, top right, bottom left, top left;
+    margin: 4px;
+}
+
+.shopcommon__index-anchor-item a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 100%;
+    padding: 0 30px 16px 18px;
+}
+
+.shopcommon__index-anchor-item::after {
+    content: '';
+    display: block;
+    background-image: url('/tire-garden/img/shopcommon/anchor_arrow.svg');
+    width: 12px;
+    height: 6px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.shopcommon__index-description-img {
+    position: absolute;
+    right: -23.5px;
+    bottom: -102px;
+    width: 117px;
+    height: 151px;
+}
+
+.shopcommon__index-manager {
+    margin-left: clamp(0px, 5.56vw, 80px);
+}
+
+.shopcommon__index-manager__img {
+    width: 240px;
+}
+
+.shopcommon__index-manager__name {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2;
+    color: #000;
+    margin-top: 8px;
+    display: block;
+}
+
+.shopcommon__index h2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    color: #097C33;
+    margin-right: clamp(0px, 3.89vw, 56px);
+}
+
+.shopcommon__article-wrapper {
+    max-width: calc(944px + 48px);
+    padding: 0 24px;
+    width: 100%;
+    margin: 112px auto 0;
+}
+
+.shopcommon__post-script-wrapper {
+    max-width: 944px;
+    width: 100%;
+    margin: 112px auto;
+    background-color: #FFF;
+    padding: 8px;
+}
+
+.shopcommon__post-script-inner {
+    position: relative;
+    padding: 49px 56px 47px;
+}
+
+.shopcommon__post-script-inner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image:
+        repeating-linear-gradient(to right, #097C33 0 4px, transparent 4px 8px),
+        repeating-linear-gradient(to bottom, #097C33 0 4px, transparent 4px 8px),
+        repeating-linear-gradient(to right, #097C33 0 4px, transparent 4px 8px),
+        repeating-linear-gradient(to bottom, #097C33 0 4px, transparent 4px 8px);
+    background-repeat: no-repeat;
+    background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+    background-position: top left, top right, bottom left, top left;
+}
+
+.shopcommon__post-script-inner h2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #097C33;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.shopcommon__post-script-inner h2::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(/tire-garden/img/shopcommon/enpitsu.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.shopcommon__post-script-inner p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+    color: #000;
+    margin-bottom: 48px;
+}
+
+.shopcommon__store-information-decoration01 {
+    margin: 2px 0 40px;
+}
+
+.shopcommon__store-information-decoration02 {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 175.25px;
+    height: 267px;
+}
+
+.shopcommon__store-information-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 56px 64px;
+    background-color: #FEFFFA;
+    max-width: 1072px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.shopcommon__store-information-img {
+    max-width: 400px;
+    width: 27.78vw;
+    max-height: 400px;
+    height: 27.78vw;
+    margin-left: 20px;
+}
+
+.shopcommon__store-information-content {
+    width: 100%;
+    max-width: 504px;
+}
+
+.shopcommon__store-information-content h2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    color: #097C33;
+    margin-bottom: 32px;
+}
+
+.shopcommon__store-information-content h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #000;
+    margin-bottom: 12px;
+}
+
+.shopcommon__store-information-content table {
+    width: 100%;
+}
+
+.shopcommon__store-information-content tr {
+    display: flex;
+    padding: 22px 0;
+    position: relative;
+    background-image: url('/tire-garden/img/shopcommon/under_line.png');
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    background-size: auto 3px;
+}
+
+.shopcommon__store-information-content th {
+    width: 124px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.shopcommon__store-information-content td {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.shopcommon__store-information-content td a {
+    text-align: left;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #097C33;
+    cursor: pointer;
+}
+
+.shopcommon__store-information-content__g-link {
+    margin-top: 8px;
+}
+
+.shopcommon__store-information-content__tel-link {
+    text-decoration: none;
+    text-align: left;
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #097C33 !important;
+}
+
+.shopcommon__store-information-decoration {
+    position: absolute;
+    bottom: -63px;
+    right: -24.54px;
+    width: 63px;
+    height: 184px;
+}
+
+/* 記事コンテンツ */
+.shopcommon__article-section {
+    margin-top: 96px;
+}
+
+.shopcommon__article-wrapper h2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #097C33;
+    padding-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    background-image: repeating-linear-gradient(to right,
+            #097C33 0 6px,
+            transparent 6px 12px);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    background-size: auto 1px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+.shopcommon__article-wrapper h2::before {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-image: url('/tire-garden/img/shopcommon/taiya01.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+}
+
+.shopcommon__article-wrapper h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2;
+    color: #000;
+    margin-bottom: 24px;
+}
+
+.shopcommon__article-wrapper p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.shopcommon__article-img {
+    display: flex;
+    gap: 8px;
+    margin: 48px 0 72px;
+}
+
+.shopcommon__article-catchfrase {
+    position: relative;
+    display: inline-block;
+    padding: 18px 32px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 2;
+    color: #000;
+    background-color: #f8f9f1;
+}
+
+.shopcommon__article-catchfrase::before,
+.shopcommon__article-catchfrase::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 32px;
+}
+
+.shopcommon__article-catchfrase::before {
+    top: 0;
+    left: 0;
+    border-top: 1px solid #097C33;
+    border-left: 1px solid #097C33;
+}
+
+.shopcommon__article-catchfrase::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid #097C33;
+    border-right: 1px solid #097C33;
+}
+
+.shopcommon__article-staff-name {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2;
+    color: #000;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.shopcommon__article-staff-name span {
+    display: flex;
+    align-items: center;
+}
+
+.shopcommon__article-staff-name span::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    width: 8px;
+    height: 1px;
+    background-color: #000;
+    margin-right: 8px;
+}
+
+/* 隠しテキスト */
+.shopcommon__article-section {
+    position: relative;
+    max-width: 100%;
+}
+
+.shopcommon__store-shop-link {
+    position: relative;
+    background-color: #097C33;
+    border-radius: 50px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 56px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 80px auto 0;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .shopcommon__index {
+        display: block;
+        padding: 48px 24px 32px;
+    }
+
+    .shopcommon__index h2 {
+        margin-bottom: 54px;
+        margin-left: 16px;
+    }
+
+    .shopcommon__index-manager {
+        position: absolute;
+        top: 16px;
+        right: 24px;
+        text-align: center;
+        margin-left: 0;
+
+    }
+
+    .shopcommon__index-manager__img {
+        width: 80px;
+    }
+
+    .shopcommon__index-manager__name {
+        font-size: 13px;
+        line-height: 1.2;
+        margin-top: 4px;
+    }
+
+    .shopcommon__index-description-img {
+        right: 50%;
+        transform: translateX(50%);
+        bottom: -81px;
+        width: 84px;
+        height: 109px;
+    }
+
+    .shopcommon__index-anchor-list {
+        max-width: 100%;
+    }
+
+    .shopcommon__index-anchor-item {
+        font-size: 16px;
+    }
+
+    .shopcommon__index-anchor-item a {
+        font-size: 16px;
+        padding: 0 30px 16px 16px;
+    }
+
+    .shopcommon__store-information-decoration02 {
+        display: none;
+    }
+
+    .shopcommon__store-information-wrapper {
+        display: block;
+        padding: 40px 32px 64px;
+    }
+
+    .shopcommon__store-information-img {
+        width: 100%;
+        height: auto;
+        margin: 32px auto 0;
+    }
+
+    .shopcommon__store-information-content {
+        max-width: 100%;
+    }
+
+    .shopcommon__store-information-decoration {
+        right: 50%;
+        transform: translateX(50%);
+        bottom: -100px;
+        width: 46px;
+        height: 143px;
+    }
+
+    .shopcommon__store-information-content th {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .shopcommon__store-information-content tr {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .shopcommon__kv {
+        margin-left: -24px;
+        margin-right: -24px;
+    }
+
+    .shopcommon__kv__heading {
+        left: 24px;
+        right: unset;
+        bottom: 83px;
+    }
+    
+    .shopcommon__kv__2__heading {
+        left: unset;
+        right: 4px;
+        top: 13px;
+    }    
+
+    .shopcommon__kv__heading h1 span {
+        font-size: 24px;
+    }
+    
+    .shopcommon__kv__2__heading h1 span {
+        font-size: 24px;
+    }    
+
+    .shopcommon__gradient-overlay {
+        background: linear-gradient(to bottom,
+                rgba(64, 78, 69, 0) 30%,
+                #404E45 70%);
+    }
+
+
+    .shopcommon__wrapper {
+        padding: 0 24px 126px;
+    }
+
+    .shopcommon__article-section {
+        margin-top: 80px;
+        scroll-margin-top: 80px;
+    }
+
+    .shopcommon__article-wrapper {
+        width: 100%;
+        padding: 0;
+        margin: 153px auto 104px;
+    }
+
+    .shopcommon__article-wrapper h2 {
+        font-size: 20px;
+        gap: 12px;
+        margin-bottom: 32px;
+        align-items: flex-start;
+    }
+
+    .shopcommon__article-wrapper h2::before {
+        min-width: 30px;
+        width: 30px;
+        height: 30px;
+        margin-top: 4px;
+    }
+
+    .shopcommon__article-img {
+        margin: 32px 0 56px;
+        display: grid;
+    }
+
+    .shopcommon__article-wrapper h3 {
+        font-size: 18px;
+    }
+
+    .shopcommon__article-catchfrase {
+        font-size: 18px;
+        padding: 15px 24px
+    }
+
+    .shopcommon__article-staff-name {
+        margin-bottom: 20px;
+    }
+
+    .shopcommon__post-script-wrapper {
+        margin: 104px auto;
+    }
+
+    .shopcommon__post-script-inner {
+        padding: 40px 24px;
+    }
+
+    .shopcommon__post-script-inner h2 {
+        font-size: 20px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .shopcommon__post-script-inner h2::before {
+        min-width: 28px;
+        width: 28px;
+        height: 28px;
+        margin-top: 3px;
+    }
+
+    .shopcommon__post-script-inner p {
+        margin-bottom: 32px;
+    }
+
+    .hidden-text {
+        max-height: 150px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 56px;
+    }
+
+    .hidden-text::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        background: linear-gradient(to bottom, rgba(248, 250, 242, 0) -60%, #F8FAF2 100%);
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+
+    .read-more-btn {
+        font-family: 'Shippori Mincho', 'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', '游明朝', 'Yu Mincho', 'YuMincho', serif;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: #097C33;
+        border: 1px solid #097C33;
+        border-radius: 50px;
+        padding: 4px 32px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 2;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    .shopcommon__store-shop-link {
+        margin: 134px auto 0;
+        width: 240px;
+        height: 48px;
+    }
+}
 
 /* ===============================
 06_プロショップマガジン各記事01 End
