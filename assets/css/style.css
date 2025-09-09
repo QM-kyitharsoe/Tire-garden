@@ -191,6 +191,13 @@
 /* ===============================
 06_プロショップマガジン各記事01 Start
 =============================== */
+.ssr-span{
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
 /* shopcommon */
 .shopcommon__wrapper {
     background-color: #F8FAF2;
@@ -691,6 +698,23 @@
     cursor: pointer;
     margin: 80px auto 0;
     font-size: 15px;
+}
+
+.return-list-btn{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.6;
+    font-family: "Noto Sans JP", sans-serif;
+    border: 1px solid #212121;
+    border-radius: 6px;
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 0;
+    background: #fff;
+    color: #212121;
+    margin-top: 121px;
 }
 
 
