@@ -19,14 +19,13 @@
   width: 100%;
   height: 110px;
   background-color: #fafafa;
-  display: flex;
-  align-items: center;
 }
 .ssr-title {
   font-family: "Noto Serif JP", serif;
   font-size: 3.6rem;
   font-weight: 700;
-  line-height: 1.6;
+  line-height: 110px;
+
 }
 .main-map-sec {
   margin-top: 80px;
@@ -93,27 +92,31 @@
   }
 }
 
-.shop-01-address {
+.shop-00 {
   margin-top: 60px;
   border-top: solid 1px #bebebe;
-  padding: 30px 0 99px;
+  padding-top: 30px;
   display: grid;
   grid-template-columns: 51.5% 48.5%;
+  margin-bottom: 90px;
 }
 .info-side h4 {
     font-size: 2.8rem;
     font-weight: 700;
     line-height: 1.6;
+    color: #212121;
 }
 .info-side .schedule {
     margin-top: 28px;
     font-size: 1.6rem;
     line-height: 2;
+    color: #212121;
 }
 .info-side .services {
     margin-top: 40px;
     font-size: 1.8rem;
     font-weight: 500;
+    color: #212121;
     line-height: 1.6;
     width: fit-content;
     position: relative;
@@ -135,12 +138,31 @@
     transform: translateY(-50%);
     right: -21px;
 }
+.service-cards {
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2px;
+}
+.service-card {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #3E3E3E;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 59px;
+    width: 59px;
+    border: solid 1px #000;
+}
 
 .btns-side {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 60px 60px 60px 1fr;
+    row-gap: 10px;
     justify-items: end;
 }
 .btns-side a {
@@ -151,22 +173,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Lato", "Sans Serif";
-    font-size: 1.4rem;
     color: #0C7C34;
     gap: 3px;
 }
+.phone-btn {
+    font-family: "Lato", "Sans Serif";
+    font-size: 1.4rem;
+}
 .phone-btn span {
     font-size: 2rem;
+}
+.site-btn {
+    font-size: 1.6rem;
 }
 .site-btn img {
     width: 27px;
     height: 16px;
     margin-right: 2px;
 }
+.map-btn {
+    font-size: 1.6rem;
+}
 .map-btn img {
     width: 13px;
     height: 19px;
+}
+.shop-03 .btns-side {
+    grid-template-rows: 1fr 60px 60px 60px 60px 1fr;
+}
+.reserve-btn {
+    background-color: #FDEDF2 !important;
+    border: solid 1px #DE4670 !important;
 }
     /* ===============================
 03_店舗検索結果 End
