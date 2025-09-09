@@ -11,8 +11,164 @@
 /* ===============================
 03_店舗検索結果 Start
 =============================== */
+.ssr-section {
+  width: 100%;
+  background-color: #fafafa;
+}
+.ssr-title-div {
+  width: 100%;
+  height: 110px;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+}
+.ssr-title {
+  font-family: "Noto Serif JP", serif;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+.main-map-sec {
+  margin-top: 80px;
+}
+.main-map-sec h3 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+.main-map-sec h3 span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.checkbox-line {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.checkbox-line input {
+  display: none;
+}
+.checkbox-line .checkmark {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #b4b4b4;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+}
+.checkbox-line input:checked + .checkmark {
+  background-color: #ecf8f0;
+  border-color: #0c7c34;
+}
+.checkbox-line input:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 13px;
+  background-image: url(/assets/img/store-serach-result/checkbox-tick.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-map {
+  margin-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  .main-map-sec h3 {
+    font-size: 2.4rem;
+  }
+  .main-map-sec h3 span {
+    font-size: 1.2rem;
+  }
+  .checkbox-line {
+    gap: 6px;
+    font-size: 1.2rem;
+  }
+}
 
-/* ===============================
+.shop-01-address {
+  margin-top: 60px;
+  border-top: solid 1px #bebebe;
+  padding: 30px 0 99px;
+  display: grid;
+  grid-template-columns: 51.5% 48.5%;
+}
+.info-side h4 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+.info-side .schedule {
+    margin-top: 28px;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.info-side .services {
+    margin-top: 40px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.6;
+    width: fit-content;
+    position: relative;
+}
+.info-side .services::after {
+    content: "i";
+    display: flex;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #0C7C34;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.5px;
+    font-size: 1rem;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    right: -21px;
+}
+
+
+.btns-side {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 60px 60px 60px 1fr;
+    justify-items: end;
+}
+.btns-side a {
+    background-color: #ECF8F0;
+    border: solid 1px #0C7C34;
+    width: 310px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato", "Sans Serif";
+    font-size: 1.4rem;
+    color: #0C7C34;
+    gap: 3px;
+}
+.phone-btn span {
+    font-size: 2rem;
+}
+.site-btn img {
+    width: 27px;
+    height: 16px;
+    margin-right: 2px;
+}
+.map-btn img {
+    width: 13px;
+    height: 19px;
+}
+    /* ===============================
 03_店舗検索結果 End
 =============================== */
 
@@ -150,5 +306,4 @@
 
 /* ===============================
 18_お問い合わせ End
-=============================== */
-
+=============================== */;

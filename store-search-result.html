@@ -40,19 +40,60 @@
 
 <body>
     <header>
-        <section id="headerPart"></section>
+        <section id="headerPart">
+        </section>
     </header>
 
     <main>
-        <section>
+        <section class="ssr-section">
             <div class="container">
                 <div class="ssr-title-div">
                     <h2 class="ssr-title">店舗検索結果</h2>
                 </div>
+
+            </div>
+        </section>
+        <section class="main-map-sec container">
+            <h3>検索結果<span>（東京都江戸川区）</span>3店舗</h3>
+            <label class="checkbox-line">
+                <input type="checkbox" name="map">
+                <span class="checkmark"></span>
+                ヨコハマタイヤ来店予約実施店舗を絞り込む
+            </label>
+            <iframe class="main-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240.82110158464374!2d139.8673080356459!3d35.69941224383584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018863a7d88cf4d%3A0x8d2a69772c1f79e2!2sTire-kan%20Komatusgawa!5e0!3m2!1sen!2smm!4v1757401182078!5m2!1sen!2smm"
+                width="100%" height="454" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="shop-addresses">
+                <div class="shop-01-address">
+                    <div class="info-side">
+                        <h4>タイヤガーデン小岩</h4>
+                        <p class="schedule">
+                            住所：東京都江戸川区東小岩4-9-2<br>
+                            営業時間：9:00～18:00<br>
+                            定休日：無休<br>
+                            決済：現金
+                        </p>
+                        <p class="services">取り扱いサービス</p>
+                    </div>
+                    <div class="btns-side">
+                        <br>
+                        <a class="phone-btn" href="">TEL.<span>03-3658-3897</span></a>
+                        <a class="site-btn" href="">
+                            <img src="./assets/img/store-serach-result/shop-icon.png" alt="shop-icon-to-go-to-the-site">
+                            店舗サイトへ
+                        </a>
+                        <a class="map-btn" href="">
+                            <img src="./assets/img/store-serach-result/location-icon.png" alt="location-icon">
+                            アクセスマップ
+                        </a>
+                        <br>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-
     <footer>
         <section id="footerPart"></section>
     </footer>
