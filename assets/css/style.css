@@ -754,6 +754,10 @@
     margin-top: 121px;
 }
 
+.return-list-btn:hover{
+    background-color: #ECF8F0;
+}
+
 
 @media screen and (max-width: 1000px) {
     .shopcommon__index {
