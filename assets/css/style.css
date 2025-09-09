@@ -17,14 +17,13 @@
 }
 .ssr-title-div {
   width: 100%;
-  height: 110px;
+  padding: 25px 0 37px;
   background-color: #fafafa;
 }
 .ssr-title {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 3.6rem;
   font-weight: 700;
-  padding-top: 25px;
 
 }
 .main-map-sec {
