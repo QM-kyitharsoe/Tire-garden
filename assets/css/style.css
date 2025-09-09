@@ -28,7 +28,7 @@
 
 }
 .main-map-sec {
-  margin-top: 80px;
+  margin: 80px auto 120px;
 }
 .main-map-sec h3 {
   font-size: 3.6rem;
@@ -204,6 +204,10 @@
 .reserve-btn {
     background-color: #FDEDF2 !important;
     border: solid 1px #DE4670 !important;
+}
+.reserve-btn img {
+     width: 18px;
+     height: 17px;
 }
     /* ===============================
 03_店舗検索結果 End
