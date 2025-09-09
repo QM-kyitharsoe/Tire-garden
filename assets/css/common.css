@@ -183,3 +183,28 @@ Start Bread Crumb
 /* ===============================
 End Bread Crumb
 =============================== */
+
+/* ===============================
+Start H2 Title One
+=============================== */
+.h2-title-one{
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.6;
+    color: #212121;
+    position: relative;
+}
+
+.h2-title-one::before{
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #0C7C34;
+    position: absolute;
+    top: -22px;
+    left: 0;
+}
+
+/* ===============================
+End H2 Title One
+=============================== */

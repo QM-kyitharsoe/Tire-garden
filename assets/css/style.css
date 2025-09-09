@@ -1024,8 +1024,67 @@
     padding-top: 20px;
 }
 
-.anothersection{
-    padding-top: 300px;
+.worklistsection{
+    padding: 177px 0px 120px;
+}
+
+.worklists{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 33px;
+    margin-top: 49px;
+}
+
+.worklist{
+    width: 100%;
+    max-width: 576px;
+    height: 400px;
+    position: relative;
+}
+
+
+
+.worklist img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.worklist-content{
+    position: absolute;
+    min-height: 126px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.67);
+    color: #FFFFFF;
+    padding: 30px;
+}
+
+.worklist-content::after{
+    content: "";
+    position: absolute;
+    bottom: 44px;
+    right: 30px;
+    width: 38px;
+    height: 38px;
+    background: url('/assets/img/pitworklist/worklist_linkbtn.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wl-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+.wl-small-txt{
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 768px) {
@@ -1033,7 +1092,10 @@
         width: 90%;
         padding: 20px;
     }
-    
+
+    .worklists{
+        grid-template-columns: 1fr;
+    }
 }
 /* ===============================
 09_ピット作業一覧 End
